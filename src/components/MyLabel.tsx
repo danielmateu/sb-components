@@ -33,7 +33,7 @@ export interface MyLabelProps {
 
 export const MyLabel = ({
     allCaps = false,
-    backgroundColor = '',
+    backgroundColor = 'transparent',
     color = 'primary',
     label = 'No Label',
     size = 'normal',
