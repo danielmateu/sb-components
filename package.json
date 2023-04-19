@@ -1,18 +1,43 @@
 {
-  "name": "my-storybook",
-  "private": true,
-  "version": "0.0.0",
+  "name": "dmp-my-storybook-components",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
+  "licence": "MIT",
+  "typings": "dist/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielmateu/sb-components.git"
+  },
+  "author": "Daniel Mateu",
+  "description": "Storybook components",
+  "keywords": [
+    "storybook",
+    "components",
+    "react"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "dist/index.js",
+  "homepage": "https://daniel-mateu-portfolio.vercel.app/",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "build-storybook",
+    "build": "pnpm clean && tsc && pnpm copy-files",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=5c4a236cce33"
+    "chromatic": "npx chromatic --project-token=5c4a236cce33",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "dependencies": {
-    "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
@@ -27,10 +52,16 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "chromatic": "^6.17.3",
+    "copyfiles": "^2.4.1",
     "prop-types": "^15.8.1",
+    "rimraf": "^5.0.0",
     "storybook": "^7.0.5",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^4.9.3"
   },
   "readme": "ERROR: No README data found!",
   "_id": "my-storybook@0.0.0"

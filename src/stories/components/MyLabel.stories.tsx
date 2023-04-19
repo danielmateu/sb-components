@@ -13,11 +13,11 @@ export default {
         backgroundColor: {control: 'color'},
     },
     tags: ['autodocs'], 
-} as Meta<typeof MyLabel>
+} as Meta<typeof MyLabel> 
 
 const Template: StoryFn<typeof MyLabel> = (args) => <MyLabel {...args}/>
 
-export const Basic = Template.bind({})
+export const Basic: any = Template.bind({})
 Basic.args = {
     label: 'Basic Label',
     size: 'normal',
@@ -25,7 +25,7 @@ Basic.args = {
     // color: 'primary'
 }
 
-export const AllCaps = Template.bind({})
+export const AllCaps: any = Template.bind({})
 AllCaps.args = {
     label: 'All Caps',
     size: 'normal',
@@ -34,7 +34,7 @@ AllCaps.args = {
 
 }
 
-export const Secondary = Template.bind({})
+export const Secondary: any = Template.bind({})
 Secondary.args = {
     label: 'Secondary',
     size: 'normal',
@@ -43,7 +43,7 @@ Secondary.args = {
 
 }
 
-export const Tertiary = Template.bind({})
+export const Tertiary: any = Template.bind({})
 Tertiary.args = {
     label: 'Tertiary',
     size: 'normal',
@@ -52,14 +52,14 @@ Tertiary.args = {
 }
 
 // CustomFontColor
-export const CustomFontColor = Template.bind({})
+export const CustomFontColor: any = Template.bind({})
 CustomFontColor.args = {
     label: 'Custom Font Color',
     size: 'h1',
     fontColor: '',
 }
 
-export const customBackgroundColor = Template.bind({})
+export const customBackgroundColor: any = Template.bind({})
 customBackgroundColor.args = {
     label: 'Custom Background Color',
     size: 'h1',
