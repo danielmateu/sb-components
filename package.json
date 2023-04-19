@@ -1,7 +1,7 @@
 {
   "name": "dmp-my-storybook-components",
   "private": false,
-  "version": "0.1.9",
+  "version": "0.1.17",
   "type": "module",
   "licence": "MIT",
   "typings": "dist/main.d.ts",
