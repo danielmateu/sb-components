@@ -1,7 +1,7 @@
 {
   "name": "dmp-my-storybook-components",
   "private": false,
-  "version": "0.1.17",
+  "version": "0.1.2",
   "type": "module",
   "licence": "MIT",
   "typings": "dist/main.d.ts",
@@ -29,7 +29,7 @@
   "homepage": "https://daniel-mateu-portfolio.vercel.app/",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "npm clean && tsc && npm copy-files",
+    "build": "npm run clean && tsc && npm copy-files",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
