@@ -29,3 +29,4 @@ dist-ssr
 # Production
 /build
 /storybook-static
+/dist
