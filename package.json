@@ -38,6 +38,7 @@
     "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "dependencies": {
+    "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
@@ -55,6 +56,7 @@
     "copyfiles": "^2.4.1",
     "prop-types": "^15.8.1",
     "rimraf": "^5.0.0",
+    "semantic-release": "^21.0.1",
     "storybook": "^7.0.5",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
@@ -63,6 +65,14 @@
     "react": "^18.2.0",
     "typescript": "^4.9.3"
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "readme": "ERROR: No README data found!",
   "_id": "my-storybook@0.0.0"
 }
