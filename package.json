@@ -29,7 +29,7 @@
   "homepage": "https://daniel-mateu-portfolio.vercel.app/",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "npm run clean && tsc && npm copy-files",
+    "build": "npm run clean && tsc && npm run copy-files",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
